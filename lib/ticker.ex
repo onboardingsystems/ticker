@@ -1,0 +1,2 @@
+defmodule Ticker do
+end

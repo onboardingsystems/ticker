@@ -19,6 +19,8 @@ defmodule Ticker.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:credo, "~> 0.4.12", only: [:dev, :test]},
+    ]
   end
 end

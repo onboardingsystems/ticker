@@ -6,7 +6,7 @@ defmodule Ticker.Mixfile do
   def project do
     [
       app: :ticker,
-      version: "0.0.3",
+      version: "0.0.4",
       elixir: "~> 1.3",
       source_url: @project_url,
       homepage_url: @project_url,

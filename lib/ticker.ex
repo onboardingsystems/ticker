@@ -3,6 +3,12 @@ defmodule Ticker do
   Timer to schedule jobs in small intervals.
   """
 
+  use GenServer
+
+  def start_link(state) do
+    GenServer.start_link(__MODULE__, state)
+  end
+
   def init(state) do
     send(self, :tick)
     {:ok, state}

@@ -1,11 +1,15 @@
 defmodule Ticker.Mixfile do
   use Mix.Project
 
+  @project_url "https://github.com/onboardingsystems/ticker"
+
   def project do
     [
       app: :ticker,
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.3",
+      source_url: @project_url,
+      homepage_url: @project_url,
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -31,10 +35,9 @@ defmodule Ticker.Mixfile do
   defp package do
     [
       name: :ticker,
-      files: ["lib"],
       maintainers: ["OnBoardingSystems"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/onboardingsystems/ticker"}
+      links: %{"GitHub" => @project_url}
     ]
   end
   defp description do

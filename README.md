@@ -1,5 +1,7 @@
 # Ticker
 
+[![Build Status](https://semaphoreci.com/api/v1/onboarding-systems/ticker/branches/master/shields_badge.svg)](https://semaphoreci.com/onboarding-systems/ticker)
+
 Timer to schedule jobs in small intervals.
 
 ## Installation
